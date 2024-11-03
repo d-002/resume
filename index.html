@@ -5,13 +5,51 @@
         <title>POWE-R/Place</title>
 
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js"></script>
+        <script src="main.js"></script>
+        <script src="info.js"></script>
+        <script src="color.js"></script>
     </head>
 
     <body>
-        <div id="edit">
+        <div id="options-container">
+            <div class="scroll">
+            </div>
+            <div id="buttons">
+                <a href="javascript:;">print</a>
+                <a href="javascript:;">import</a>
+                <a href="javascript:;">export</a>
+            </div>
         </div>
-        <div id="resume">
+
+        <div id="resume-container">
+            <div id="resume">
+                <div id="banner">
+                    <h1 id="Iname"></h1>
+                    <h3 id="Isubtitle"></h3>
+                    <div>
+                        <img id="picture" />
+                        <h2 id="Ititle"></h2>
+                    </div>
+                </div>
+
+                <div id="resume-main">
+                    <div id="left">
+                        <div class="personal-info">
+                            <ul>
+                                <li id="Iphone"></li>
+                                <li id="Iaddress"></li>
+                                <li id="Iemail1"></li>
+                                <li id="Iemail2"></li>
+                                <li id="Iwebsite1"></li>
+                                <li id="Iwebsite2"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="right">
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
