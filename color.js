@@ -1,6 +1,6 @@
 let col = [16, 99, 90];
 let white = [255, 255, 255];
-let themeMult = [0, 0.5, 0.8, 1];
+let themeMult = [0, 0.6, 0.9, 1];
 
 function tohex(i) {
     let h = i.toString(16);
