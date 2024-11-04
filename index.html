@@ -2,13 +2,16 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>POWE-R/Place</title>
+        <title>Simple resume editor</title>
 
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="blocks.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="main.js"></script>
         <script src="info.js"></script>
         <script src="color.js"></script>
-        <script src="main.js"></script>
+        <script src="ioutils.js"></script>
     </head>
 
     <body>
@@ -16,9 +19,9 @@
             <div class="scroll">
             </div>
             <div id="buttons">
-                <a href="javascript:;">print</a>
-                <a href="javascript:;">import</a>
-                <a href="javascript:;">export</a>
+                <a onclick="printResume()">print</a>
+                <a onclick="importResume()">import</a>
+                <a onclick="exportResume()">export</a>
             </div>
         </div>
 
@@ -28,7 +31,7 @@
                     <h1 id="Iname"></h1>
                     <h3 id="Isubtitle"></h3>
                     <div>
-                        <img id="picture" />
+                        <!--img id="picture" /-->
                         <h2 id="Ititle"></h2>
                     </div>
                 </div>

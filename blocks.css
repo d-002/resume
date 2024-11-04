@@ -18,6 +18,7 @@
 
 .personal-info ul {
     margin: 0;
+    padding: 0 0 0 calc(0.05 * var(--w));
 }
 
 .icon-at {
