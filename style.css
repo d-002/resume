@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@ body, html {
 body {
     display: flex;
 
-    font-family: open sans, calibri, sans-serif;
+    font-family: "Open Sans", calibri, sans-serif;
 }
 
 #options-container {
@@ -21,7 +23,6 @@ body {
 #resume-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-grow: 1;
 
     overflow-x: hidden;
@@ -51,7 +52,7 @@ body {
 }
 
 #banner h1, h3 {
-    margin: 0 0 0 40%;
+    margin: 0 0 0 45%;
     padding-left: calc(0.02 * var(--w));
 
     font-family: segoe ui, calibri, sans-serif;
@@ -94,7 +95,7 @@ body {
 #picture {
     position: absolute;
     top: calc(-0.15 * var(--w));
-    left: calc(0.075 * var(--w));
+    left: calc(0.1 * var(--w));
 
     width: calc(0.25 * var(--w));
     height: calc(0.25 * var(--w));
@@ -114,37 +115,21 @@ body {
 :is(#left, #right) {
     display: flex;
     flex-direction: column;
-    gap: calc(0.03 * var(--w));
+    gap: calc(0.05 * var(--w));
     justify-content: space-between;
-}
 
-:is(#left, #right)>div {
-    position: relative;
-}
+    padding: calc(0.02 * var(--w));
+    box-sizing: border-box;
 
-:is(#left, #right)>div:not(:last-child)::after {
-    content: "";
-
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, calc(0.01 * var(--w)));
-
-    width: 30%;
-    height: 1px;
-
-    background-color: var(--th2);
+    height: 100%;
 }
 
 #left {
     width: 45%;
-    height: 100%;
 
     background-color: var(--th3);
 }
 
 #right {
     flex-grow: 1;
-
-    height: 100%;
 }
