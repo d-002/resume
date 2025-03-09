@@ -1,20 +1,17 @@
 function printResume() {
-    let doc = new jsPDF();
+    let doc = new jspdf.jsPDF();
     let source = dom.resume;
 
-    doc.fromHTML(
-    source,
+    window.html2canvas = html2canvas;
+
+    doc.html(
+        source,
+        { callback: () => doc.output("dataurlnewwindow") },
         15,
         15,
-        {
-            "width": 180,
-            //"elementHandlers": () => false
-        }
     );
 
     //doc.output("dataurlnewwindow");
-
-    doc.save("test.pdf");
 }
 
 function importResume() {
